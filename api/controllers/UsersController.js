@@ -67,16 +67,34 @@ module.exports = {
         }
     },
     user_profile: function (req, res) {
-        User.find({mobNo: req.body.mobNo},function (err, user) {
-            if (user.length) {
-                var userData = {};
-                userData = user[0];
-                userData.UID = user[0].id
-                return res.json({ status: 1, profileData: userData });
-            }
-            else {
-                res.json({ error: 'User not found', status: 0 }, 200);
-            }
-        });
+        if(req.body.mobNo) {
+            User.find({mobNo: req.body.mobNo},function (err, user) {
+                if (user.length) {
+                    var userData = {};
+                    userData = user[0];
+                    userData.UID = user[0].id
+                    return res.json({ status: 1, profileData: userData });
+                }
+                else {
+                    res.json({ error: 'User not found', status: 0 }, 200);
+                }
+            });
+        } else {
+            res.json({ error: 'Please insert a valid mobile number', status: 0 }, 200);
+        }
+    },
+    find_user: function (req, res) {
+        if(req.body.mobNo) {
+            User.find({mobNo: req.body.mobNo},function (err, user) {
+                if (user.length) {
+                    return res.json({ success: 'User found', status: 1});
+                }
+                else {
+                    res.json({ error: 'User not found', status: 0 }, 200);
+                }
+            });
+        } else {
+            res.json({ error: 'Please insert a valid mobile number', status: 0 }, 200);
+        }
     }
 };
