@@ -18,5 +18,6 @@ module.exports.routes = {
   'post /create/user' : 'UsersController.create_user',
   'post /user/profile' : 'UsersController.user_profile',
   'post /finduser' : 'UsersController.find_user',
-  'post /create/verificationcode' : 'UsersController.create_verification_code'
+  'post /create/verificationcode' : 'UsersController.create_verification_code',
+  'post /verify/mobileno' : 'UsersController.verify_code'
 };

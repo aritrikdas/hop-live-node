@@ -128,5 +128,23 @@ module.exports = {
                 }
             });
         }
+    },
+    verify_code: function (req, res) {
+        var data = {};
+            data.verifictionCode = req.param('verifictionCode');
+            data.mobNo = req.param('mobNo');
+
+        if (data.mobNo == undefined || data.mobNo == '' || data.verifictionCode == undefined || data.verifictionCode == '') {
+            var e = { message: 'Something went wrong!' };
+            return res.json({ error: e, status: 0 });
+        } else {
+            Code.find(data, function(err, codefound){
+                if (codefound.length) {
+                    res.json({ status: 1 });
+                } else {
+                    res.json({ status: 0 });
+                }
+            });
+        }
     }
 };
