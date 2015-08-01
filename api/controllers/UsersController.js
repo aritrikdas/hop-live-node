@@ -65,5 +65,18 @@ module.exports = {
                 }
             });
         }
+    },
+    user_profile: function (req, res) {
+        User.find({mobNo: req.body.mobNo},function (err, user) {
+            if (user.length) {
+                var userData = {};
+                userData = user[0];
+                userData.UID = user[0].id
+                return res.json({ status: 1, profileData: userData });
+            }
+            else {
+                res.json({ error: 'User not found', status: 0 }, 200);
+            }
+        });
     }
 };

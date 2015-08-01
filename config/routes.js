@@ -15,5 +15,6 @@ module.exports.routes = {
   },
   /* Users */
   'post /login' : 'UsersController.login',
-  'post /create/user' : 'UsersController.create_user'
+  'post /create/user' : 'UsersController.create_user',
+  'post /user/profile' : 'UsersController.user_profile'
 };
