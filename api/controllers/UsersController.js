@@ -96,5 +96,37 @@ module.exports = {
         } else {
             res.json({ error: 'Please insert a valid mobile number', status: 0 }, 200);
         }
+    },
+    create_verification_code: function (req, res) {
+        var data = {};
+            data.verifictionCode = req.param('verifictionCode');
+            data.mobNo = req.param('mobNo');
+
+        if (data.mobNo == undefined || data.mobNo == '' || data.verifictionCode == undefined || data.verifictionCode == '') {
+            var e = { message: 'Something went wrong!' };
+            return res.json({ error: e, status: 0 });
+        } else {
+            Code.find({verifictionCode: data.verifictionCode}, function(err, codefound){
+                if (codefound.length) {
+                    var e = { message: 'It is not a unique code!' };
+                    return res.json({ error: e, status: 0 });
+                } else {
+                    if (data.mobNo != '' && data.mobNo !== undefined) {
+                        Code.create(data, function(err, createdcode){
+                            if (err) {
+                                console.log(err.Errors);
+                                return res.json({ error: err.Errors, status: 0 });
+                            }
+                            else {
+                                res.json({ status: 1, createdcode: createdcode.id });
+                            }
+                        });
+                    } else {
+                        var e = { message: 'Please enter valid Code!' };
+                        return res.json({ error: e, status: 0 });
+                    }
+                }
+            });
+        }
     }
 };
