@@ -28,9 +28,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  // localDiskDb: {
-  //   adapter: 'sails-disk'
-  // },
+  localDiskDb: {
+    adapter: 'sails-disk'
+  }
 
   /***************************************************************************
   *                                                                          *
@@ -56,7 +56,7 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  mongodb: {
+ /* mongodb: {
     adapter: 'sails-mongo',
     host: 'localhost',
     port: 27017,
@@ -64,7 +64,7 @@ module.exports.connections = {
     password: '',
     database: 'hop-live-node',
     schema    : true
-  }
+  }*/
 
   /***************************************************************************
   *                                                                          *
