@@ -1,0 +1,35 @@
+{
+  "name": "500 Miles & beyond",
+  "description": "Live Travel Love",
+  "directory": "assets/bower_components",
+  "main": "app.js",
+  "authors": [
+    "Aritrik Das"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "500miles",
+    "500miles&beyond",
+    "travel",
+    "weekend",
+    "tours"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "yui"
+  ],
+  "homepage": "http://500milesnbeyond.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}
