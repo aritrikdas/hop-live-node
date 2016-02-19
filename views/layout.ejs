@@ -1,94 +1,463 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>New Sails App</title>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Best Weekend Travel Site."/>
+<meta name="keywords" content="holiday, travel, hotels, hotel, tourism, restaurants, resorts, tourist places, wildlife, resort, tours and travels, tour, holidays, tour packages, holiday packages, review, sightseeing, travel package, trip, holiday packages, reviews, tours, trips, holiday, hill stations, weekend destinations, weekend tours, weekend tour, short trip, kolkata walk, leisure trip, offbit trip, weekend trip, adventure trip, mythological trip, historical trip, city trip, food walk"/>
+<title>500milesnbeyond</title>
+<!-- favicon start -->
+<link rel="icon" type="image/x-icon" href="favicon.png" />
+<link href="/styles/style.css" type="text/css" rel="stylesheet" />
+<link href="/styles/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- Owl Carousel Assets -->
+<link href="/styles/owl.carousel.css" rel="stylesheet">
+<link href="/styles/owl.theme.css" rel="stylesheet">
+</head>
 
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    
-    <!--  
-        Stylesheets and Preprocessors
-        ==============================
-
-        You can always bring in CSS files manually with `<link>` tags, or asynchronously
-        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
-        of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-        By default, stylesheets from your `assets/styles` folder are included
-        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
-        are supported. In production, your styles will be minified and concatenated into
-        a single file.
-        
-        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-            
-            + Change the order of your CSS files
-            + Import stylesheets from other directories
-            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
-    -->
-
-    <!--STYLES-->
-    <link rel="stylesheet" href="/styles/importer.css">
-    <!--STYLES END-->
-  </head>
-
-  <body>
-    <%- body %>
+<body>
+<!-- outer -->
+<section class="outer">
+  <!-- header -->
+    <header role="homeBanner">
 
 
+      <section class="logoSec">
+        <!-- logo -->
+        <section role="logo">
+          <figure><a href="http://500milesnbeyond.com/" rel="home" title="500 miles and beyond"><img src="http://500milesnbeyond.com/wp-content/uploads/2015/08/logo-landing2.png" alt="500 miles and beyond" title="500 miles and beyond"></a></figure>
+        </section>
+        <!-- logo /-->
+        <section role="navCont">
+          <!-- nav -->
+          <nav role="mainNav">
+            <div class="menu-main-navigation-container">
+              <ul id="menu-main-navigation" class="">
+                <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-25"><a href="http://500milesnbeyond.com/">Home</a></li>
+                <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="http://500milesnbeyond.com/about/">About</a></li>
+                <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://500milesnbeyond.com/tour/">Tour</a></li>
+                <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://500milesnbeyond.com/blog/">Blog</a></li>
+                <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://500milesnbeyond.com/contact/">Contact</a></li>
+              </ul>
+            </div>                
+          </nav>
+          <!-- nav /-->
+          <!-- search -->
+          <div class="search" style="display:none;">
+            <div id="search-container" class="search-box-wrapper hide">
+              <div class="search-box">
+                <form role="search" method="get" class="search-form" action="http://500milesnbeyond.com/">
+                  <label>
+                  <span class="screen-reader-text">Search for:</span>
+                  <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                  </label>
+                  <input type="submit" class="search-submit" value="Search">
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- search /-->
+        </section>
+      </section>
 
-    <!--
-        Client-side Templates
-        ========================
 
-        HTML templates are important prerequisites of modern, rich client applications.
-        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
-        that you load these templates client-side.
+      <!-- home slider -->
+        <section id="homeBannerSlider" class="owl-carousel">
+          <!-- slider post -->
+            <article role="bannerSlider" class="item">
+              <!-- box info -->
+                <section role="sliderInfo" class="txtCenter">
+                    <header>
+                        <!-- state name -->
+                        <p role="stateName">west Bengal</p>
+                        <!-- state name /-->
+                        <!-- location name -->
+                        <h1>Sandakphu</h1>
+                        <!-- location name /-->
+                    </header>
+                    <p>lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text.</p>
+                </section>
+                <!-- box info /-->
+              <figure><img src="images/banner1.jpg" alt="" title="" /></figure>
+            </article>
+            <!-- slider post /-->
+            <!-- slider post -->
+            <article role="bannerSlider" class="item">
+              <!-- box info -->
+                <section role="sliderInfo" class="txtCenter">
+                    <header>
+                        <!-- state name -->
+                        <p role="stateName">Orissa</p>
+                        <!-- state name /-->
+                        <!-- location name -->
+                        <h1>Bangriposi</h1>
+                        <!-- location name /-->
+                    </header>
+                    <p>lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text.</p>
+                </section>
+                <!-- box info /-->
+              <figure><img src="images/banner2.jpg" alt="" title="" /></figure>
+            </article>
+            <!-- slider post /-->
+        </section>
+        <!-- home slider /-->
+        <!-- logo -->
+        <section role="logo"></section>
+        <!-- logo /-->
+        <!-- nav -->
+        <nav role="mainNav"></nav>
+        <!-- nav /-->
+        <!-- search -->
+        <div class="search"></div>
+        <!-- search /-->
+    </header>
+    <!-- header /-->
+    <!-- wrapper -->
+    <section role="wrapper">
+      <!-- welcome -->
+        <section role="welcome" class="padding60-0 txtCenter">
+          <section class="w1200">
+                <header class="headingImg">
+                    <h2>Welcome</h2>
+                    <figure><img src="images/welcome-bg.png" alt="" title=""/></figure>
+                </header>
+                <p>Lorem ipsum dolor text hello this is a dummy filler text for website. Lorem ipsum dolor text hello this is a dummy filler text for website.  Lorem ipsum dolor text hello this is a dummy filler text for website. Lorem ipsum dolor text hello this is a dummy filler text for website. Lorem ipsum dolor text hello this is a dummy filler text for website.  Lorem ipsum dolor text hello this is a dummy filler text for website.</p>
+            </section>
+        </section>
+        <!-- welcome /-->
+        <!-- tour types -->
+        <section role="tourTypes">
+          <article></article>
+        </section>
+        <!-- tour types /-->
+        <!-- why choose us -->
+        <section role="chooseUs" class="padding60-0 txtCenter">
+          <section class="w1200">
+                <header class="headingImg">
+                    <h2>Why choose us</h2>
+                    <figure><img src="images/choose-bg.png" alt="" title=""/></figure>
+                </header>
+                <!-- choose options -->
+                <ul>
+                    <li>
+                      <figure><img src="images/choose1.png" alt="" /></figure>
+                        <span>Best Location</span>
+                    </li>
+                    <li>
+                      <figure><img src="images/choose2.png" alt="" /></figure>
+                        <span>Best Hotel</span>
+                    </li>
+                    <li>
+                      <figure><img src="images/choose3.png" alt="" /></figure>
+                        <span>Good Service</span>
+                    </li>
+                    <li>
+                      <figure><img src="images/choose4.png" alt="" /></figure>
+                        <span>Reasonable Price</span>
+                    </li>
+                </ul>
+                <!-- choose options /-->
+            </section>
+        </section>
+        <!-- why choose us /-->
+        <!-- news update -->
+        <section role="newsUpdate" class="txtCenter">
+          <header>
+              <h2>News &amp; Update</h2>
+            </header>
+            <!-- blog post cont -->
+            <section id="blogPostSlider" class="blogPost owl-carousel">
+              <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Life in Altitude</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog1.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Snowy Winter</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog2.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Ride to Heaven</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog3.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Magnificient Safari</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog4.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Life in Altitude</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog1.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Life in Altitude</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog1.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Life in Altitude</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog1.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+                <!-- single post -->
+              <article class="item">
+                  <header>
+                      <!-- post title -->
+                      <h3><a href="#">Life in Altitude</a></h3>
+                        <!-- post title /-->
+                        <!-- post date -->
+                        <span>on May 02, 2015</span>
+                        <!-- post date /-->
+                    </header>
+                    <!-- featured image -->
+                    <figure><a href="#"><img src="images/blog1.jpg" alt="" title="" /></a></figure>
+                    <!-- featured image /-->
+                </article>
+                <!-- single post /-->
+            </section>
+            <!-- blog post cont /-->
+        </section>
+        <!-- news update /-->
+        <!-- testimonial -->
+        <section role="testiMonials" class="padding60-0 txtCenter">
+          <section class="w1200">
+                <header class="headingImg">
+                    <h2>What clients say</h2>
+                    <figure><img src="images/testimonial-bg.png" alt="" title=""/></figure>
+                </header>
+                <!-- what clients say -->
+                <section id="tMonialSlider" class="owl-carousel">
+                  <article class="item">
+                        <header>
+                            <!-- client proile pic -->
+                            <figure><img src="images/q1.jpg" alt="" title="" /></figure>
+                            <!-- client proile pic /-->
+                        </header>
+                      <p>lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text.</p>
+                        <footer>
+                            <!-- client name designation -->
+                            <p role="clientDetail">
+                                <span role="clientName">Katherine Ambrose</span>
+                                <span role="clientDesigntn">CEO - MyCompany</span>
+                            </p>
+                            <!-- client name designation /-->
+                        </footer>
+                  </article>
+                    <article class="item">
+                        <header>
+                            <!-- client proile pic -->
+                            <figure><img src="images/q1.jpg" alt="" title="" /></figure>
+                            <!-- client proile pic /-->
+                        </header>
+                      <p>lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text.</p>
+                        <footer>
+                            <!-- client name designation -->
+                            <p role="clientDetail">
+                                <span role="clientName">Katherine Ambrose</span>
+                                <span role="clientDesigntn">CEO - MyCompany</span>
+                            </p>
+                            <!-- client name designation /-->
+                        </footer>
+                  </article>
+                    <article class="item">
+                        <header>
+                            <!-- client proile pic -->
+                            <figure><img src="images/q1.jpg" alt="" title="" /></figure>
+                            <!-- client proile pic /-->
+                        </header>
+                      <p>lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text. lorem ipsum dolor is simply dumy text.</p>
+                        <footer>
+                            <!-- client name designation -->
+                            <p role="clientDetail">
+                                <span role="clientName">Katherine Ambrose</span>
+                                <span role="clientDesigntn">CEO - MyCompany</span>
+                            </p>
+                            <!-- client name designation /-->
+                        </footer>
+                  </article>
+                </section>
+                <!-- what clients say /-->
+            </section>
+        </section>
+        <!-- testimonial /-->
+    </section>
+    <!-- wrapper /-->
+    <!-- footer -->
+    <footer role="footer">
+      <!-- footer top -->
+        <section role="footerTop" class="padding60-0">
+          <section class="w1200">
+                <!-- small description -->
+                <section role="footSmalldesc">
+                    <!-- footer logo -->
+                    <header>
+                      <figure><img src="images/footer-logo.png" alt="500 miles and beyond" title="500 miles and beyond" /></figure>
+                    </header>
+                    <!-- footer logo /-->
+                    <p>lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text. lorem ipsum dolor is simply dummy text.</p>
+                    <!-- copyright -->
+                    <footer>&copy; 2015 All rights reserved</footer>
+                    <!-- copyright /-->
+                </section>
+                <!-- small description /-->
+                <!-- contact info -->
+                <section role="contactInfo">
+                    <header>
+                        <h4>Contact Info</h4>
+                    </header>
+                    <div>
+                      <ul>
+                          <li><i class="fa fa-map-marker"></i><a href="#">732/21 Second Street, Kolkata, 700006 West Bengal, India.</a> loremisum dolor is simply.</li>
+                            <li><i class="fa fa-phone"></i><a href="tel:345-567-789">345-567-789</a></li>
+                            <li><i class="fa fa-mobile"></i><a href="tel:345-567-789">345-567-789</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:admin@500milesnbeyond.com">admin@500milesnbeyond.com</a></li>
+                            <li><i class="fa fa-globe"></i><a href="http://500milesnbeyond.com" target="_blank" title="500milesnbeyond.com">500milesnbeyond.com</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- contact info /-->
+                <!-- recent posts -->
+                <section role="recentPosts">
+                    <header>
+                        <h4>Recent Posts</h4>
+                    </header>
+                    <div>
+                      <ul>
+                          <li><a href="#">Extreme Skiing -- <span>May 27, 2015</span></a></li>
+                            <li><a href="#">Bungee Jumping -- <span>June 13, 2015</span></a></li>
+                            <li><a href="#">Kayaking -- <span>Jan 06, 2015</span></a></li>
+                            <li><a href="#">Hiking Tour -- <span>Dec 25, 2015</span></a></li>
+              <li><a href="#">Rock Climbing -- <span>Jan 04, 2016</span></a></li>
+                            <li><a href="#">Ride to Heaven -- <span>July 15, 2015</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- recent posts /-->
+                <!-- all tours -->
+                <section role="allTours">
+                    <header>
+                        <h4>All Tours</h4>
+                    </header>
+                    <div>
+                      <ul>
+                          <li><a href="#"><figure><img src="images/post-bg1.jpg" alt="" title="" /></figure></a></li>
+                            <li><a href="#"><figure><img src="images/post-bg2.jpg" alt="" title="" /></figure></a></li>
+                            <li><a href="#"><figure><img src="images/post-bg3.jpg" alt="" title="" /></figure></a></li>
+                            <li><a href="#"><figure><img src="images/post-bg4.jpg" alt="" title="" /></figure></a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- all tours /-->
+            </section>
+        </section>
+        <!-- footer top /-->
+        <!-- footer bottom -->
+        <section role="footerBottm">
+          <section class="w1200">
+              <!-- footer nav -->
+                <nav role="footerNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>     
+                        <li><a href="#">About</a></li>    
+                        <li><a href="#">Tour</a></li>    
+                        <li><a href="#">Blog</a></li>    
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- footer nav /-->
+                <!-- social section -->
+                <ul role="socialIcons">
+                    <li><a href="#" title="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" title="google+"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+                <!-- social section /-->
+            </section>
+        </section>
+        <!-- footer bottom /-->
+    </footer>
+   <!-- footer /--> 
+</section>
+<!-- outer /-->
 
-        By default, your Gruntfile is configured to automatically load and precompile
-        client-side JST templates in your `assets/templates` folder, then
-        include them here automatically (between TEMPLATES and TEMPLATES END).
-        
-        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-
-            + Import templates from other directories
-            + Use a different template engine (handlebars, jade, dust, etc.)
-            + Internationalize your client-side templates using a server-side
-              stringfile before they're served.
-    -->
-
-    <!--TEMPLATES-->
-    
-    <!--TEMPLATES END-->
-
-
-    <!--
-
-      Client-side Javascript
-      ========================
-
-      You can always bring in JS files manually with `script` tags, or asynchronously
-      on the client using a solution like AMD (RequireJS).  Or, if you like, you can 
-      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-      By default, files in your `assets/js` folder are included here
-      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
-      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
-      and concatenated into a single file.
-      
-      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-      For example, here are a few things you could do:
-          
-          + Change the order of your scripts
-          + Import scripts from other directories
-          + Use a different preprocessor, like TypeScript
-
-    -->
-
-    <!--SCRIPTS-->
-    <script src="/js/dependencies/sails.io.js"></script>
-    <!--SCRIPTS END-->
-  </body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/owl.carousel.js"></script>
+<script src="/js/custom.js"></script>
+</body>
 </html>
+<!-- 
+    <script src="/js/dependencies/sails.io.js"></script>
+
+ -->
